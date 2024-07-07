@@ -45,8 +45,6 @@ function userCheckMW (req,res,next){
     }
 };
 function kidneyCheckMW (req,res,next){
-    const username = req.headers.username;
-    const password = req.headers.password;
     const kidneyId = req.query.kidneyId;
     if(kidneyId != 1 && kidneyId != 2){
         res.status(400).json({
